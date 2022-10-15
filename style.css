@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --fc-line: hsla(240, 6%, 21%, 1);
+  --bg-body:hsla(0, 0%, 100%, 1);
+  --bg-card1: hsl(240, 9%, 89%);
+  --line-card1:hsla(240, 6%, 21%, 1);
+  --bg-card2: hsla(194, 97%, 31%, 1);
+  --line-card2:hsla(0, 0%, 100%, 1);
+  --fc-line2: hsla(0, 0%, 100%, 1);
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg-body);
+  color: var(--fc-line);
+  display: grid;
+  min-height: 100vh;
+}
+.page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+  gap: 19.2rem;
+}
+#stopwatch{
+  width: 32.1rem;
+  display: flex;
+  flex-direction: column;
+}
+#timer{
+  font-size: clamp(6.1rem, 6.1rem + 20vw, 12.6rem);
+  line-height: 14.8rem;
+  display: flex;
+  margin-bottom: 4.8rem;
+}
+#buttons{
+  display: flex;
+  justify-content: space-between;
+}
+#buttons button{
+  border: none;
+  background: none;
+  object-fit: cover;
+  height: 4.8rem;
+  cursor: pointer;
+}
+#buttons button:hover{
+  opacity: 0.5;
+}
+#cards{
+  width: 30.8rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.2rem;
+}
+#cards button:hover{
+  opacity: 0.5;
+}
+#cards button{
+  object-fit: cover;
+  height: 15.2rem;
+  width: 13.8rem;
+  border: none;
+  background: none;
+  cursor: pointer;  
+}
+#cards .bntClick svg path[fill*="#E1E1E6"]{
+  fill: var(--bg-card2);
+}
+
+#cards .bntClick svg path[fill*="#323238"]{
+  fill:var(--line-card2);
+}
