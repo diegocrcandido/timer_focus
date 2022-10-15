@@ -1,9 +1,9 @@
 export default function Sound(){
 
-  const forestAudio = new Audio("./sons/Floresta.wav")
-  const rainAudio = new Audio("./sons/Chuva.wav")
-  const coffeeShopAudio = new Audio("./sons/Cafeteria.wav")
-  const fireAudio = new Audio("./sons/Lareira.wav")
+  const forestAudio = new Audio("./sound/Floresta.wav")
+  const rainAudio = new Audio("./sound/Chuva.wav")
+  const coffeeShopAudio = new Audio("./sound/Cafeteria.wav")
+  const fireAudio = new Audio("./sound/Lareira.wav")
 
   forestAudio.loop = true
   rainAudio.loop = true
